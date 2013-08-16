@@ -1,3 +1,8 @@
+/* Explosion effect written in JavaScript using HTML 5 canvas and KineticJS by Chuck Leone
+/* Use as you like, please credit me if you do
+/* email: chuckleone@gmail.com
+/* twitter @ChuckLeone 
+ */ 
 function explosion() {
 	function getRandomColor() {
 		var colorSet = ['#ffb30d', '#e8820c', '#ff5900', 'e82e0c', 'ff0723', '#444444' ]
@@ -31,8 +36,7 @@ function explosion() {
         var particles = new Kinetic.Circle({
           	x: Math.random() * (stage.getWidth() - 20),
          	y: Math.random() * (stage.getHeight() - 20),
-         	//x: 15 + (Math.random() * 12) + 2,
-         	//y: 15 + (Math.random() * 10) + 5,
+
           	radius: Math.random() * 2,
           	fill: '333333',
           	opacity: .5,
